@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5sp"
+    android:background="@color/black"
+    tools:context=".views.view.DrinkDetail"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:id="@+id/ivDrink"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:padding="4dp"
+            android:baselineAlignBottom="true"
+
+            android:scaleType="fitXY"
+            android:layout_margin="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInst"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivDrink"
+            android:text="Instructions" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInstructions"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxLines="4"
+            android:textColor="@color/white"
+
+            app:layout_constraintLeft_toRightOf="@+id/ivDrink"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvInst"
+            tools:text="Instructions" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvsubheading"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/ivDrink"
+            app:layout_constraintStart_toStartOf="@+id/tvInst"
+            app:layout_constraintTop_toBottomOf="@+id/tvInstructions"
+            android:text="Glass" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGlass"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+
+            app:layout_constraintLeft_toRightOf="@+id/ivDrink"
+            app:layout_constraintStart_toStartOf="@+id/ivDrink"
+            app:layout_constraintTop_toBottomOf="@+id/tvsubheading"
+            tools:text="Instructions" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
